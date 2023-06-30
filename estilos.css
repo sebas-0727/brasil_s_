@@ -1,0 +1,282 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: 0%;
+}
+.sesion1{
+    height:80px;
+    width: 100%;
+    background-color:blue;
+    position:fixed;
+    display: flex;
+}
+
+.image{
+    height:60px;
+    padding-inline-start: 15px;
+    margin-left:-9px;
+    margin-top: 10px
+
+}
+.sesion1a{
+    margin-top: 30px;
+    height: 49px;
+    width: 100%;
+    background-image: url(imagenes/brasil.jfif);
+    background-position-x: -70px;
+    background-position-y:-20px;
+    position:fixed;
+}
+.sesion1b{
+    overflow: hidden;
+}
+
+.sesion1b {
+    position:static;
+    width: 100%;
+    height: 1189px;
+    background-color:green;
+}
+.balon{
+    margin-left: 17%;
+    height: 450px;
+}
+
+
+
+
+.sesion2{
+    height: 900px;
+}
+
+.sesion1dere{
+    position: sticky;
+    display: flex;
+    height: 100%;
+    align-items:center;
+    left:180%;
+
+}
+.sesion1dere a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    align-content: center;
+
+
+}
+.sesion1dere a:hover{
+    color:green
+}
+.image2{
+    height:50px;
+    padding-inline-start: 20px;
+
+
+}
+
+.sesion2b{
+
+    margin-left: 110px;
+    font-size:60px;
+    color: white;
+    margin-bottom: 100px;
+    position:absolute;
+}
+
+
+.fondox{
+    background-image: url(imagenes/brasil.jfif);
+    height: 49px;
+    width: 100%;
+    background-position-x: -70px;
+    background-position-y:-20px;
+    margin-top:-475px;
+    }
+.fondoxa{
+    background-image: url(imagenes/brasil.jfif);
+    height: 49px;
+    width: 100%;
+    background-position-x: -70px;
+    background-position-y:-20px;
+    margin-top: 0px;
+}
+
+.fondoxb{
+    background-image: url(imagenes/brasil.jfif);
+    height: 49px;
+    width: 100%;
+    background-position-x: -70px;
+    background-position-y:-20px;
+    margin-top: 0px;
+}
+
+.fondoses3{
+    position:static;
+    background-color: blue;
+    width: 100%;
+    height: 930px;
+    margin-top: -111px;
+}
+.fondoses3a{
+    position:static;
+    background-color: rgb(255, 255, 0);
+    width: 100%;
+    height: 810px;
+    margin-top: -111px;
+}
+.fondoses3b{
+    position:static;
+    background-color:green;
+    width: 100%;
+    height: 810px;
+    margin-top: -111px;
+}
+.sesion3{
+    margin-top: 110px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 5px 5px 7px green;
+    
+}
+.sesion3a{
+    margin-top: 110px;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 5px 5px 7px blue;
+    
+}
+.infosesion3{
+    font-size: 26px;
+}
+.sesion3b{
+    margin-top: 110px;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 5px 5px 7px blue;
+    
+}
+.imagen3{
+    position: static;
+    margin-left: 240px;
+    margin-top: 20px;
+    width: 1000px;
+    height:750px ;
+}
+.copa{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    width: 70%;
+    margin-left: 250px;
+    margin-top: 70px;
+}
+.calen{
+    position:static;
+    margin-left: 230px;
+    width: 70%;
+
+}
+
+
+
+
+.galeria{
+    font-family: 'open sans';
+}
+
+.galeria h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid #0077C0;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen4{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen4 img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:blue ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen4:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen4{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen4{
+        width: 80%;
+    }
+}
+
+.cere{
+    position: static;
+    margin-top: 125px;
+    margin-left: 20%;
+}
